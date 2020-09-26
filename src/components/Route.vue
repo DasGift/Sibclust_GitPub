@@ -2,22 +2,28 @@
   <v-container fluid>
     <span>Маршрут</span>
     <v-row align="center">
-      <v-col class="d-flex" cols="12" sm="6">
-        <v-select
-            :items="items"
-            filled
-            label="Откуда забрать?"
-            dense
-        ></v-select>
-      </v-col>
-      <v-col class="d-flex" cols="12" sm="6">
-        <v-select
-            :items="items"
-            filled
-            label="Куда доставить?"
-            dense
-        ></v-select>
-      </v-col>
+      <div style="display: flex; width: 100%">
+        <v-col class="d-flex" cols="12" sm="5">
+          <v-select
+              :items="items"
+              filled
+              label="Откуда забрать?"
+              dense
+          ></v-select>
+
+        </v-col>
+        <v-col class="d-flex" sm="1">
+          <v-icon color="#1771E6">fas fa-exchange-alt</v-icon>
+        </v-col>
+        <v-col class="d-flex" cols="12" sm="5">
+          <v-select
+              :items="items"
+              filled
+              label="Куда доставить?"
+              dense
+          ></v-select>
+        </v-col>
+      </div>
     </v-row>
     <v-row align="center">
       <v-col>
@@ -88,6 +94,9 @@ export default {
 </script>
 
 <style lang="scss">
+.v-text-field__details {
+  display: none !important;
+}
   //.v-text-field>.v-input__control>.v-input__slot:before,
   //.theme--light.v-text-field:not(.v-input--has-state):hover>.v-input__control>.v-input__slot:before,
   //.theme--light.v-text-field>.v-input__control>.v-input__slot:before {

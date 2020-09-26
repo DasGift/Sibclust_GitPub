@@ -10,7 +10,6 @@
             active-class="active-button"
         >
           <v-btn value="left" block>Физическое лицо</v-btn>
-          <v-icon color="#1771E6">fas fa-exchange-alt</v-icon>
           <v-btn value="center" block>Юридическое лицо</v-btn>
         </v-btn-toggle>
       </v-col>
