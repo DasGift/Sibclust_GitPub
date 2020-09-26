@@ -8,6 +8,8 @@
       <Gabarits />
       <Checkpoints />
       <Speed />
+      <Additionals />
+      <Buttons />
     </v-app>
   </div>
 </template>
@@ -18,6 +20,8 @@
   import Gabarits from './Gabarits'
   import Checkpoints from './Checkpoints'
   import Speed from './Speed'
+  import Additionals from './Additionals'
+  import Buttons from './Buttons'
 
   export default {
     components: {
@@ -25,7 +29,9 @@
       Route,
       Gabarits,
       Checkpoints,
-      Speed
+      Speed,
+      Additionals,
+      Buttons
     }
   }
 </script>

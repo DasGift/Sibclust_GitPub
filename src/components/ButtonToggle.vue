@@ -9,19 +9,9 @@
             mandatory
             active-class="active-button"
         >
-          <v-btn
-              value="left"
-              block
-          >
-            Физическое лицо
-          </v-btn>
-
-          <v-btn
-              value="center"
-              block
-          >
-            Юридическое лицо
-          </v-btn>
+          <v-btn value="left" block>Физическое лицо</v-btn>
+          <v-icon color="#1771E6">fas fa-exchange-alt</v-icon>
+          <v-btn value="center" block>Юридическое лицо</v-btn>
         </v-btn-toggle>
       </v-col>
     </v-row>
@@ -46,6 +36,7 @@ export default {
 }
 
 .v-btn-toggle>.v-btn:not(.v-btn--active) {
+  border: 1px solid #C7C7C7 !important;
   color: #212121;
 }
 </style>

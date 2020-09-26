@@ -43,7 +43,17 @@
       <v-col>
         <v-radio-group v-model="toAdresse" :mandatory="true">
           <v-radio label="Доставить до отделения" value="toPost"></v-radio>
-          <v-radio label="Доставить ко времени" value="toTime"></v-radio>
+          <div style="display: flex; align-items: center">
+            <v-radio label="Доставить ко времени" value="toTime"></v-radio>
+            <v-tooltip v-model="show" bottom>
+              <template v-slot:activator="{ on, attrs }">
+                <v-btn icon v-bind="attrs" v-on="on">
+                  <v-icon color="#1771E6" small style="margin-left: 5px">fas fa-ruble-sign</v-icon>
+                </v-btn>
+              </template>
+              <span>Данная услуга предоставляется за отдельную плату</span>
+            </v-tooltip>
+          </div>
         </v-radio-group>
         <v-row>
           <v-col>
@@ -71,7 +81,8 @@ export default {
   data: () => ({
     items: ['Москва', 'Казань', 'Томск', 'Владивосток'],
     fromAdresse: 'fromPost',
-    toAdresse: 'toPost'
+    toAdresse: 'toPost',
+    show: false
   }),
 }
 </script>
