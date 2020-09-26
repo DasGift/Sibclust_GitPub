@@ -47,11 +47,9 @@ export default {
   name: "Speed",
   data: () => ({
     items: [
-      'Dog Photos',
-      'Cat Photos',
-      '',
-      'Potatoes',
-      'Carrots',
+      '1-3 дня',
+      '3-10 дней',
+      '10+ дней',
     ],
     model: ['Carrots'],
   }),
